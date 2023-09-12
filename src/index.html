@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> <!-- Inclua o arquivo CSS externo -->
+    <title>Formulario</title>
+
+</head>
+<script src="./scripts.js" defer></script>
+<body>
+    <div class="container">
+        <form id="form" action="" class="form-container" onsubmit="return fieldValidated()">
+            <h1>Formulário de Contato</h1>
+
+            <label class="label" for="name">Nome</label>
+            <input id="name" class="input-field" type="text" name="name">
+            <div id="name-error" class="error"></div>
+
+            <label class="label" for="email">Email</label>
+            <input id="email" class="input-field" type="email" name="email">
+            <div id="email-error" class="error"></div>
+
+            <label class="label" for="message">Mensagem</label>
+            <textarea id="message" class="input-field" name="message" cols="30" rows="5"></textarea>
+            <div id="message-error" class="error"></div>
+
+            <button id="button" class="button" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
